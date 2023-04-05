@@ -1,0 +1,157 @@
+body
+{
+    display: flex;
+    background-color: #4D4B50;
+    color: white;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-family: 'Lora', serif;
+}
+
+header, footer
+{
+    background-color: #2D2A2F;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*position: absolute;*/
+}
+
+img
+{
+    width: 3vw;
+}
+
+a
+{
+    align-self: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+    text-decoration: none;
+    color: #b0adb0;
+    font-size: 125%;
+}
+
+p
+{
+    color: #b0adb0;
+}
+
+button
+{
+    font-family: 'Lora', serif;
+}
+
+#name
+{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#homeIcon
+{
+    display: flex;
+}
+
+#centerMenu, #contact
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+}
+
+#endMenu
+{
+    display: flex;
+    justify-content: end;
+}
+
+#profil
+{
+    display: flex;
+}
+
+#profil img
+{
+    width: 5vw;
+}
+
+.center
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center img
+{
+    width: 37vw;
+}
+
+.bottomRight
+{
+    display: flex;
+    justify-content: end;
+}
+
+.bottomRight button
+{
+    background-color: #2D2A2F;
+    color: #b0adb0;
+    border: 0;
+    border-radius: 30px;
+    height: 2em;
+    font-size: 0.9em;
+}
+
+.bottomRight button:hover
+{
+    background-color: #b0adb0;
+    color: #2D2A2F;
+    transition: background-color 0.5s, color 0.5s;
+    cursor: pointer;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40vh;
+}
+  
+.column
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.thumbnail
+{
+    width: 12vw;
+}
