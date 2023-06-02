@@ -8,6 +8,7 @@ body
     justify-content: space-between;
     height: 100vh;
     font-family: 'Lora', serif;
+    overflow-x: hidden;
 }
 
 header, footer
@@ -32,7 +33,7 @@ nav
 
 img
 {
-    width: 3vw;
+    width: 3em;
 }
 
 a
@@ -52,9 +53,11 @@ p
     color: #b0adb0;
 }
 
-button
+#button
 {
     font-family: 'Lora', serif;
+    display: inline;
+    padding: 10px;
 }
 
 #name
@@ -67,6 +70,22 @@ button
 #homeIcon
 {
     display: flex;
+    filter: invert(76%) sepia(3%) saturate(220%) hue-rotate(251deg) brightness(93%) contrast(88%);
+}
+
+#homeIcon:hover
+{
+    filter: invert(100%) sepia(3%) saturate(7500%) hue-rotate(188deg) brightness(111%) contrast(70%);
+}
+
+#i1
+{
+    display: none;
+}
+
+#i2
+{
+    display: block;
 }
 
 #centerMenu, #contact
@@ -88,9 +107,20 @@ button
     display: flex;
 }
 
-#profil img
+#i1, #i2
 {
     width: 5vw;
+    min-width: 70px;
+}
+
+.button
+{
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover
+{
+    transform: scale(1.2);
 }
 
 .center
@@ -103,6 +133,7 @@ button
 .center img
 {
     width: 37vw;
+    margin-bottom: 30px;
 }
 
 .bottomRight
@@ -111,7 +142,7 @@ button
     justify-content: end;
 }
 
-.bottomRight button
+.bottomRight #button
 {
     background-color: #2D2A2F;
     color: #b0adb0;
@@ -121,7 +152,7 @@ button
     font-size: 0.9em;
 }
 
-.bottomRight button:hover
+.bottomRight #button:hover
 {
     background-color: #b0adb0;
     color: #2D2A2F;
@@ -129,7 +160,7 @@ button
     cursor: pointer;
 }
 
-.row
+.row, .row4
 {
     display: flex;
     flex-direction: row;
@@ -151,7 +182,82 @@ button
     margin-right: 10%;
 }
 
+.smallerThumbnail
+{
+    width: 8vw;
+}
+
 .thumbnail
 {
     width: 12vw;
+}
+
+.biggerThumbnail
+{
+    width: 16vw;
+}
+
+a:hover
+{
+    color: #c49860;
+}
+
+@media screen and (max-width: 800px)
+{
+    img
+    {
+        width: 5em;
+    }
+
+    .smallerThumbnail
+    {
+        width: 12vh;
+    }
+
+    .thumbnail
+    {
+        width: 12vh;
+    }
+
+    .biggerThumbnail
+    {
+        width: 20vh;
+    }
+
+    .bottomRight
+    {
+        justify-content: center;
+    }
+
+    .center img
+    {
+        width: 45vh;
+    }
+
+    .row
+    {
+        height: auto;
+    }
+
+    a
+    {
+        font-size: 90%;
+    }
+
+    #homeIcon
+    {
+        display: none;
+    }
+
+    #i1
+    {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    #i2
+    {
+        display: none;
+    }
 }
